@@ -1,0 +1,15 @@
+<p>ニコニコ動画のマイリストのURL、たとえば、</p>
+
+<pre>
+http://www.nicovideo.jp/my/mylist/#/1061751
+http://www.nicovideo.jp/mylist/1061751
+</pre>
+
+<p>のようなURLを入力すると、マイリスト中の動画を、貼付け用のiframe表記に変換してくれます。</p>
+
+<p>公開状態のマイリストしか変換できません。</p>
+
+<form method="post" action="mylist_convert">
+	<input type="text" name="url" size="60" />
+	<input type="submit" value="送信" />
+</form>

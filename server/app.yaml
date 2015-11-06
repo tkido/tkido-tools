@@ -1,0 +1,28 @@
+application: tkido-sample
+version: 3
+runtime: python
+api_version: 1
+
+default_expiration: "1d"
+
+handlers:
+
+- url: /favicon.ico
+  static_files: static/image/favicon.ico
+  upload: static/image/favicon.ico
+
+- url: /image
+  static_dir: static/image
+
+- url: /css
+  static_dir: static/css
+
+- url: /js
+  static_dir: static/js
+
+- url: /htdoc
+  static_dir: static/htdoc
+
+- url: /.*
+  script: main.py
+
