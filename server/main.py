@@ -6,6 +6,7 @@ import webapp2
 
 from google.appengine.api import memcache
 from google.appengine.api import namespace_manager
+from google.appengine.api import urlfetch
 from google.appengine.api import users
 from google.appengine.ext import ndb
 
